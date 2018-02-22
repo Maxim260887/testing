@@ -1,0 +1,351 @@
+/*-----------------------------------------------------------------*/
+
+/*Подключаю сброс стилей и шрифты*/
+@import url(../CSS/normalize.css);
+@import url(../FONT/fonts.css);
+
+/*Задаю 100% высоту всему html*/
+
+html{
+    height: 100%;
+}
+
+/*Задаю параметры для Body------------------------*/
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #F9F9F9;
+}
+
+/*Задаю параметры основному блоку-----------------*/
+
+.wrapper{
+    width: 79.375rem;
+    height: 115rem;
+    position: relative;
+    margin: 0 auto;
+}
+
+/*Задаю параметры 1 блоку wrapper__item-----------*/
+
+.wrapper__item{
+    width: 100%;
+    position: relative;
+    background-image: url(../PHOTO/bg.jpg);
+    background-size: 1320px 900px;
+    background-position: -30px -105px;
+}
+
+/*Стилизую 1 блок с ссылкой*/
+
+.header__link{
+    position: absolute;
+    padding-left: 3.8125rem;
+    top: 3.875rem;
+}
+
+/*Стилизую ссылку .header__link-firstlink в 1 блоке */
+
+.header__link-firstlink{
+    text-decoration: none;
+    color: #000;
+    font-size: 2.4rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+/*Стилизую 2 блок с текстом и ссылкой--------------*/
+
+.header__text-link{
+  position: absolute; 
+  top: 6.7rem;
+  left: 3.4375rem; 
+}
+
+/*Стилизую параграф во 2 блоке с текстом и ссылкой---*/
+
+.header__text{
+    color: #161616;
+    font-size: 0.74rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+}
+
+/*Стилизую ссылку во 2 блоке с текстом и ссылкой--*/
+
+.header__link-2{
+    text-decoration: none;
+    color: #161616;
+}
+
+/*Стилизую блок с спрайтом для ссылок на соц сети---*/
+
+.header__sprite{
+    font-size: 0;
+    text-align: center;
+    position: absolute;
+    left: 64.75rem;
+    top: 5.5rem;
+}
+
+/*Стилизую ссылки в спрайте для соц. сетей-------*/
+
+.header__sprite-link{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    vertical-align: top;
+    margin: 1rem;
+    background-image:url(../PHOTO/css_sprites.png);
+    background-position: -10px -10px;
+}
+
+/*стилизую модификаторы для ссылок блока с спрайтом----------*/
+
+.twiter{
+    background-position: -10px -10px;  
+}
+
+.facebook{
+    background-position: -54px -10px;
+}
+
+.wifi{
+    background-position: -98px -10px;
+}
+
+/*Добавляю эффект при наведении на ссылку---------*/
+
+.twiter:hover{
+    background-color: blue;
+}  
+
+.facebook:hover{
+    background-color: blue;
+} 
+
+.wifi:hover{
+    background-color: blue;
+}
+
+/*стилизую основной блок с навигацией---------------*/
+
+.nav{
+    width: 72.5rem;
+    height: 4.375rem;
+    background-color: #101010;
+    position: absolute;
+    top: 37.47rem;
+    left: 3.5rem;
+    box-sizing: border-box;
+}
+
+/*стилизую список с ссылками*/
+
+.nav__item{
+    list-style-type: none;
+    margin-left: -5.3125rem;
+}
+
+/*стилизую компоненты li внутри списка ul------*/
+
+.nav__item-grup{
+    display: inline-block;
+    padding-top: 0.625rem;
+    padding-left: 5.10rem;
+}
+
+/*стилизую ссылки внутри списка в блоке с навигацией--------*/
+
+.nav__item-link{
+    text-decoration: none;
+    font-family: 'Poiret One', cursive;
+    font-size: 0.95rem;
+    color: #888888;
+    display: inline-block;
+}
+
+.nav__item-link:hover{
+    color: #CFCFCF;
+}
+
+.nav__item-link1{
+    color: #CFCFCF;
+}
+
+/*Стилизую блок с классом section--------------------*/
+
+.section{
+    position: relative;
+    top: 41.9rem;
+}
+
+/*Стилизую блок с классом section__content-----------*/
+
+.section__content{
+    height: 31.25rem;
+    background-color: #fff;
+    padding-left: 3.3rem;
+    margin-bottom: 5.875rem;
+}
+
+/*Стилизую блок с классом section__content-item------*/
+
+.section__content-item{
+    height: 19rem;
+    width: 16.875rem;
+    float: left;
+    margin-top: 5.25rem;
+    margin-right: 1.5625rem;
+}
+
+/*Стилизую заголовок с классом section__content-title---------*/
+.section__content-title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    margin-top: 0;
+    margin-bottom: 2.3125rem;
+}
+
+/*Стилизую параграф с классом section__content-text------*/
+
+.section__content-text{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    line-height: 1.7rem; 
+}
+
+/*Стилизую ссылки с классом section__link------------*/
+
+.section__link{
+    color: #000;
+}
+
+/*Cтилизую фото во втором маленьком блоке------------*/
+
+.section__img{
+    width: 270px;
+    display: inline-block;
+    margin-bottom: -3px;
+}
+
+/*Стилизую 2 параграф во втором маленьком блоке------*/
+
+.section__content-text-2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    line-height: 1.8rem;
+}
+
+/*В маленьком третьем блоке всё также как и во втором----------*/
+
+/*В маленьком четвёртом блоке всё осталось как и во втором----*/
+
+/*Стилизую пследний блок с классом section__end-------*/
+
+.section__end{
+    height: 22.1875rem;
+    width: 75.5rem;
+    box-sizing: border-box;
+    margin-left: 3.1875rem;
+}
+
+/*Стилизую заголовок в последнем блоке---------------*/
+
+.section__end-title{
+    font-family: 'Rajdhani', sans-serif; 
+    font-size: 2.8rem;
+    margin-bottom: 0.4rem;
+}
+
+/*Стилизую параграф с классом section__end-text------*/
+
+.section__end-text{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 5.125rem;
+}
+
+/*Стилизую блок с 4 маленькими блоками---------------*/
+
+.section__block{
+    height: 11.875rem;
+    box-sizing: border-box;
+}
+
+/*Стилизую 1 блок с классом section__block-item------*/
+
+.section__block-item{
+    box-sizing: border-box;
+    height: 11.875rem;
+    width: 16.6875rem;
+    float: left;
+    margin-right: 1.8125rem;
+}
+
+/*Стилизую заголовок с классом section__block-title----*/
+
+.section__block-title{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.2rem;
+    margin-top: 0;
+}
+
+/*Стилизую параграф с классом section__block-text----*/
+
+.section__block-text{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    line-height: 1.7rem;
+    margin-bottom: 2.9rem;
+}
+
+/*Стилизую блок с классом section__block-block_2-----*/
+
+.section__block-block_2{
+    width: 10rem;
+    height: 3rem;
+    box-sizing: border-box;
+    text-align: center;
+    padding-top: 1.0625rem;
+    background-color: #161616;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    color: #E8FFD2;
+}
+
+/*Оставшиеся блоки взяли значения из блока с классом section__block-block_2-------------------------------*/
+
+/*Стилизую ссылки в 4 блоках---------------------------*/
+
+.section__block-link{
+    text-decoration: none;
+}
+
+/*Стилизую блок с классом footer------------------------*/
+
+.footer{
+    width: 34rem;
+    position: relative;
+    margin: 0 auto;
+    top: 806px;
+}
+
+/*Стилизую параграф в подвале---------------------------*/
+
+.footer__text{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+}
+
+/*Стилизую ссылки в подвале-----------------------------*/
+
+.footer__link{
+     font-family: 'Montserrat', sans-serif;
+     font-size: 0.9rem;
+     color: #000;
+}
+/*----------------------------------------------------*/
